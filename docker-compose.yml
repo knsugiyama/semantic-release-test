@@ -4,11 +4,10 @@ services:
   app:
     build:
       context: .
-      dockerfile: .Dockerfile
+      dockerfile: ./Dockerfile
       target: dev
     ports:
       - 3000:3000
     init: true
     volumes:
       - '.:/home/node/app'
-    command: npm run start:dev

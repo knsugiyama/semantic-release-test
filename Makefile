@@ -7,7 +7,7 @@ all:
 
 init: ## build & run
 	@docker compose build
-	@docker compose run --rm app npm ci
+	@docker compose run --rm app
 
 dev: ## docker-compose up
 	@docker compose down app
@@ -17,6 +17,12 @@ sh: ## exec sh
 	@docker compose up --no-start app
 	@docker compose start app
 	@docker compose exec app sh
+
+docker-start: ## start docker
+	@sudo service docker start
+
+docker-stop: ## stop docker
+	@sudo service docker stop
 
 help: ## Self-documented Makefile
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) \

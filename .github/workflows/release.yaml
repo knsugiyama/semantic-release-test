@@ -23,6 +23,11 @@ jobs:
       - name: Install dependencies
         run: yarn --frozen-lockfile
 
+      - name: Create .npmrc file
+        run: |
+          touch .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.MY_PKG_TOKEN }}" >> .npmrc
+
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

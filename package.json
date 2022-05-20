@@ -7,16 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/knsugiyama/semantic-release-test.git"
-  },
-  "author": "",
+  "repository": "https://github.com/knsugiyama/semantic-release-test.git",
+  "author": "knsugiyama15 <knsugiyama15@gmail.com>",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/knsugiyama/semantic-release-test/issues"
-  },
-  "homepage": "https://github.com/knsugiyama/semantic-release-test#readme",
+  "private": true,
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",

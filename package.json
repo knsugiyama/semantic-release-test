@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
-  "repository": "https://github.com/knsugiyama/semantic-release-test.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knsugiyama/semantic-release-test.git"
+  },
   "author": "knsugiyama15 <knsugiyama15@gmail.com>",
   "license": "ISC",
   "private": true,

@@ -13,6 +13,9 @@
   },
   "author": "knsugiyama15 <knsugiyama15@gmail.com>",
   "license": "ISC",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",

@@ -19,14 +19,15 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14
+          registry-url: https://npm.pkg.github.com/
 
       - name: Install dependencies
         run: yarn --frozen-lockfile
 
-      - name: Create .npmrc file
-        run: |
-          touch .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.MY_PKG_TOKEN }}" >> .npmrc
+      # - name: Create .npmrc file
+      #   run: |
+      #     touch .npmrc
+      #     echo "//npm.pkg.github.com/:_authToken=${{ secrets.MY_PKG_TOKEN }}" >> .npmrc
 
       - name: Release
         env:

@@ -3,11 +3,11 @@
     "main",
     {
       "name": "develop",
-      "prerelease": true
+      "channel": "alpha"
     },
     {
       "name": "release",
-      "prerelease": true
+      "channel": "beta"
     }
   ]
 }

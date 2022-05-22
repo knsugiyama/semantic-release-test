@@ -9,14 +9,5 @@
       "name": "release",
       "prerelease": true
     }
-  ],
-  "plugins": [
-    [
-      "@semantic-release/npm",
-      {
-        "npmPublish": true
-      }
-    ],
-    "@semantic-release/github"
   ]
 }

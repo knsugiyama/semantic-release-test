@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/knsugiyama/semantic-release-test.git"
+    "url": "git://github.com/knsugiyama/semantic-release-test.git"
   },
   "author": "knsugiyama15 <knsugiyama15@gmail.com>",
   "license": "ISC",
   "publishConfig": {
-    "@knsugiyama:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",

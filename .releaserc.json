@@ -3,7 +3,7 @@
     "main",
     {
       "name": "develop",
-      "channel": "next"
+      "channel": "develop"
     },
     {
       "name": "release",

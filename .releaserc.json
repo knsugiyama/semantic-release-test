@@ -3,19 +3,11 @@
     "main",
     {
       "name": "develop",
-      "channel": "next"
+      "channel": "develop"
     },
     {
       "name": "release",
-      "channel": "next-major"
+      "channel": "release"
     }
-  ],
-  "plugins": [
-    [
-      "@semantic-release/npm",
-      {
-        "npmPublish": true
-      }
-    ]
   ]
 }

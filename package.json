@@ -1,5 +1,5 @@
 {
-  "name": "semantic-release-test",
+  "name": "@knsugiyama/semantic-release-test",
   "version": "1.0.0",
   "description": "semantic-release を使用してのバージョン管理検証",
   "main": "index.js",
@@ -9,11 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/knsugiyama/semantic-release-test.git"
+    "url": "git://github.com/knsugiyama/semantic-release-test.git"
   },
   "author": "knsugiyama15 <knsugiyama15@gmail.com>",
   "license": "ISC",
-  "private": true,
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",

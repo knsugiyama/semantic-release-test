@@ -4,12 +4,12 @@
     {
       "name": "develop",
       "channel": "next",
-      "prerelease": "true"
+      "prerelease": true
     },
     {
       "name": "release",
       "channel": "beta",
-      "prerelease": "true"
+      "prerelease": true
     }
   ]
 }

@@ -18,12 +18,6 @@ sh: ## exec sh
 	@docker compose start app
 	@docker compose exec app sh
 
-docker-start: ## start docker
-	@sudo service docker start
-
-docker-stop: ## stop docker
-	@sudo service docker stop
-
 help: ## Self-documented Makefile
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) \
 		| sort \
